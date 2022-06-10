@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+ 
+}
+
+.face {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: auto;
+
+}
+
+
+.navbar-brand {
+    transition: 0.5s;
+}
+
+.navbar-brand:hover {
+    text-shadow: 5px 5px 18px #ccc, -5px -5px 18px #ccc;
+}
+
+
+.dropdown-menu .dropdown-item:active {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.dropdown-menu a {
+    text-shadow: 1px 1px 0px black;
+}
+
+.dropdown .show {
+    position: relative;
+
+}
+
+.lnk
+{
+    color:#ccccff;
+}
+.lnk:hover
+{
+    color: white;
+}
+
+#scroll-top
+{
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    color: #fff;
+    background-color: gray;
+    text-align: center;
+    position: fixed;
+    display: none;
+    right: 25px;
+    bottom: 15px;
+    z-index:1;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.dropdown .show .dropdown-menu .show {
+    position: absolute;
+    top: 45px;
+    left: -27px;
+}
+
+.dropdown-menu a {
+    color: blue;
+    opacity: 0.5;
+}
+
+
+.carousel-caption {
+    background: rgba(139, 77, 77, 0.2);
+    border-radius: 5px;
+}
+
+.card-body h2 {
+    font-size: 2.5rem;
+}
+
+.card-header:hover {
+    background-color: rgb(73, 71, 71);
+    color: white;
+}
+
+.bg-sec {
+    background-image: url(../images/bg1.jpg);
+    background-position: cover;
+    height: 240px;
+    background-attachment: fixed;
+}
+
+.horz-rule {
+    background-color: #777777;
+    padding: 1px;
+}
+
+.bg2-sec {
+    background-image: url(../images/images.jpg);
+    background-position: cover;
+    height: 240px;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.hov {
+    position: relative;
+}
+
+
+.hov::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent #ADD8E6 transparent;
+    top: 20px;
+    left: 13px;
+    visibility: hidden;
+}
+
+.hov::after {
+    position: absolute;
+    content: " ";
+    height: 40px;
+    width: 80px;
+    background-color: #ADD8E6;
+    border-radius: 3px;
+    visibility: hidden;
+    top: 40px;
+    left: -15px;
+}
+
+.hov:active::before,
+.btn:hover::before {
+    visibility: visible;
+
+}
+
+
+.hov:hover::after {
+    content: "copy to clipboard";
+    visibility: visible;
+}
+
+.hov:active::after {
+    content: "copied";
+    visibility: visible;
+    height: 25px;
+}
